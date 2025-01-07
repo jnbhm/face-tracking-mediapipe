@@ -6,8 +6,6 @@ To run this project you'll need to have [Node.js](https://nodejs.org/en) install
 
 ## [DEMO](http://fld.tdbr.xyz/)
 
----
-
 ## Dev
 
 To start this project run the following command in the root folder of the project.
