@@ -107,13 +107,3 @@ function drawKeypoint(x, y, z) {
   newDiv.style.left = `${x}px`;
   landmarksContainer.appendChild(newDiv);
 }
-
-function distanceBetween(x1, y1, x2, y2) {
-  const x = x1 - x2;
-  const y = y1 - y2;
-  return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-}
-
-function convert(num, inMin, inMax, outMin, outMax) {
-  return ((num - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
-}
