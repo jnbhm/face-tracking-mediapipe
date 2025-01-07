@@ -42,9 +42,7 @@ function processResults(detections) {
 }
 ```
 
-### Detections Image
-
-![Landmarks](https://storage.googleapis.com/mediapipe-assets/documentation/mediapipe_face_landmark_fullsize.png)
+### [Image of landmarks](https://storage.googleapis.com/mediapipe-assets/documentation/mediapipe_face_landmark_fullsize.png)
 
 ---
 
