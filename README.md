@@ -54,4 +54,4 @@ To build this project run the following command:
 npm run build
 ```
 
-The built project will be in the dist folder.
+The built project will be in the `dist` folder.
