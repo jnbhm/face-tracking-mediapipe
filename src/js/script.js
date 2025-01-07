@@ -85,7 +85,6 @@ function predictWebcam() {
 }
 
 function processResults(detections) {
-  console.log(detections);
   landmarksContainer.innerHTML = "";
 
   if (detections.faceLandmarks && detections.faceLandmarks[0]?.length) {
