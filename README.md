@@ -2,7 +2,7 @@
 
 This is an example how to use the face landmark detection model with MediaPipe. Find the full description of the model [here.](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker)
 
-To run this project you'll need to have [Node.js](https://nodejs.org/en) installed on your machine. The project was set up with [vite](https://vite.dev/).
+To run this project you'll need to have [Node.js](https://nodejs.org/en) installed on your machine.
 
 ## [DEMO](http://fld.tdbr.xyz/)
 
