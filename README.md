@@ -22,6 +22,24 @@ npm run dev
 
 To use the detection you can access the `detections` object in the `processResults` function. You can find this function in `src/js/script.js`
 
+```javascript
+function processResults(detections) {
+  landmarksContainer.innerHTML = "";
+
+  if (detections.faceLandmarks && detections.faceLandmarks[0]?.length) {
+    // USE THE LANDMARKS HERE ↓
+    for (let i = 0; i < detections.faceLandmarks[0].length; i++) {
+      // extract the landmark from the array
+      const landmark = detections.faceLandmarks[0][i];
+
+      const x = videoWidth * (1 - landmark.x);
+      const y = videoHeight * landmark.y;
+      drawKeypoint(x, y, null);
+    }
+  }
+}
+```
+
 ## Build
 
 To build this project run the following command:
