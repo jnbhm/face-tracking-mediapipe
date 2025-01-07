@@ -4,6 +4,8 @@ This is an example how to use the face landmark detection model with MediaPipe. 
 
 To run this project you'll need to have [Node.js](https://nodejs.org/en) installed on your machine. The project was set up with [vite](https://vite.dev/).
 
+---
+
 ## Dev
 
 To start this project run the following command in the root folder of the project.
@@ -39,6 +41,12 @@ function processResults(detections) {
   }
 }
 ```
+
+### Detections Image
+
+![Landmarks](https://storage.googleapis.com/mediapipe-assets/documentation/mediapipe_face_landmark_fullsize.png)
+
+---
 
 ## Build
 
