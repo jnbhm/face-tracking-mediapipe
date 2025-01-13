@@ -1,10 +1,6 @@
-# Simple face landmarks detection with MediaPipe
+# Simple NPM web project setup
 
-This is an example how to use the face landmark detection model with MediaPipe. Find the full description of the model [here.](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker)
-
-To run this project you'll need to have [Node.js](https://nodejs.org/en) installed on your machine.
-
-## Dev
+This is an example how to use Node.js and NPM to develop a vanilla js web app. You can create your website with all desired NPM packaged in the `./src` folder.
 
 To start this project run the following command in the root folder of the project.
 
@@ -12,44 +8,18 @@ To start this project run the following command in the root folder of the projec
 npm install
 ```
 
-Run the dev task to see your changes live.
+The follwoing command will start a local server. That way you can see your changes live.
 
 ```bash
 npm run dev
 ```
 
-### Use the detections
-
-To use the detection you can access the `detections` object in the `processResults` function. You can find this function in `src/js/script.js`
-
-```javascript
-function processResults(detections) {
-  landmarksContainer.innerHTML = "";
-
-  if (detections.faceLandmarks && detections.faceLandmarks[0]?.length) {
-    // USE THE LANDMARKS HERE ↓
-    for (let i = 0; i < detections.faceLandmarks[0].length; i++) {
-      // extract the landmark from the array
-      const landmark = detections.faceLandmarks[0][i];
-
-      const x = videoWidth * (1 - landmark.x);
-      const y = videoHeight * landmark.y;
-      drawKeypoint(x, y, null);
-    }
-  }
-}
-```
-
-### [Image of landmarks](https://storage.googleapis.com/mediapipe-assets/documentation/mediapipe_face_landmark_fullsize.png)
-
----
-
-## Build
-
-To build this project run the following command:
+If you want to deploy your website to a hosting provider, please run the following command.
 
 ```bash
 npm run build
 ```
 
-The built project will be in the `dist` folder.
+This will build your website in the `./dist` folder. You can take the files from this folder and move them to a static hosting.
+
+This is how to create a website with npm packages and deploy it to production.
