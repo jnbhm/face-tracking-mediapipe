@@ -1,7 +1,7 @@
 {
-  "name": "hand-tracking-mediapipe",
+  "name": "npm-project-example-code",
   "version": "0.0.1",
-  "description": "A simple starter project to use the MediaPipe face tracking model with vanilla js.",
+  "description": "A simple starter project for web development with vite.",
   "license": "ISC",
   "author": "Jean Böhm <hello@jeanboehm.de>",
   "type": "module",
